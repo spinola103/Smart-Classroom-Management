@@ -1,0 +1,24 @@
+{
+  "name": "smart-classroom-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "body-parser": "^1.20.3",
+    "compromise": "^14.14.2",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "mongoose": "^8.8.2",
+    "multer": "^1.4.5-lts.1",
+    "natural": "^8.0.1",
+    "node-rake": "^1.0.1",
+    "react-crossword": "^0.2.0"
+  }
+}
