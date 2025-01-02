@@ -1,0 +1,63 @@
+.App {
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.App-header {
+  background-color: #007bff;
+  color: white;
+  padding: 1rem;
+}
+
+.notifications {
+  width: 80%;
+  margin: 2rem auto;
+  text-align: left;
+}
+
+.notifications h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.alert-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.alert {
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e6e6e6, #ffffff);
+  box-shadow: 10px 10px 20px #d9d9d9, -10px -10px 20px #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.alert:hover {
+  transform: translateY(-5px);
+  box-shadow: 15px 15px 30px #d9d9d9, -15px -15px 30px #ffffff;
+}
+
+.alert.unauthorized {
+  background: linear-gradient(145deg, #ffcccc, #ffdddd);
+  box-shadow: 10px 10px 20px #ccaaaa, -10px -10px 20px #ffeeee;
+}
+
+.alert.authorized {
+  background: linear-gradient(145deg, #ccffcc, #ddffdd);
+  box-shadow: 10px 10px 20px #aaccaa, -10px -10px 20px #eeffee;
+}
+
+.alert strong {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.alert p {
+  margin: 0.3rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
