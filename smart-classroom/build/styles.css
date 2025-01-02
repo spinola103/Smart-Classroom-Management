@@ -1,0 +1,13 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'Poppins', sans-serif; /* Use Poppins font from Google Fonts */
+    background-color: #FFF5EA; /* Lightest color from the palette */
+    margin: 0;
+}
