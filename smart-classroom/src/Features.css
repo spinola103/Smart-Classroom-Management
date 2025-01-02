@@ -1,0 +1,101 @@
+/* Features Section */
+.features {
+    padding: 60px 20px;
+    background-color: #FFF5EA;
+    margin: 40px auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns grid */
+    gap: 40px;
+    justify-items: center;
+}
+
+.features h2 {
+    grid-column: span 2; /* Span the heading across both columns */
+    font-size: 2.5rem;
+    color: #5d1660;
+    margin-bottom: 40px;
+    font-weight: 600;
+    text-align: center;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.features h2::after {
+    content: "";
+    width: 100px;
+    height: 4px;
+    background-color: #5d1660;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 2px;
+}
+
+.feature-item {
+    background-color: #844794c6;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    perspective: 1000px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    max-width: 450px;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px) rotateX(10deg) rotateY(-10deg);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.feature-icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 20px auto;
+    perspective: 1000px;
+}
+
+.feature-icon img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.5s ease-in-out;
+}
+
+.feature-item:hover .feature-icon img {
+    transform: rotateY(360deg);
+}
+
+.feature-content h3 {
+    font-size: 1.8rem;
+    color: #FFF5EA;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.feature-content p {
+    font-size: 1rem;
+    color: #FFF5EA;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .features {
+        grid-template-columns: 1fr; /* Switch to single column on small screens */
+        gap: 20px;
+    }
+
+    .feature-item {
+        transform: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        max-width: none;
+    }
+
+    .features h2 {
+        font-size: 2rem;
+    }
+}

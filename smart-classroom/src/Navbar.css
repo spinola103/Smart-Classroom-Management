@@ -1,0 +1,63 @@
+/* Navbar Container */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px; /* Increase padding for broader look */
+    background-color: #A89EBC; /* Darkest color from the palette */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); /* 3D shadow effect */
+    border-radius: 0 0 15px 15px; /* Rounded bottom corners */
+    position: fixed; /* Fixed position at the top */
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+/* Heading Next to Logo */
+.logo .heading {
+    font-size: 1.5rem;  /* Adjust the font size */
+    color: #FFF5EA;     /* Lightest color */
+    margin-left: 10px;  /* Space between logo and heading */
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Slight text shadow for 3D effect */
+}
+
+
+/* Navbar Links */
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin-left: 30px; /* Increase spacing between links */
+}
+
+.navbar nav ul li a {
+    text-decoration: none;
+    color: #FFF5EA; /* Lightest color */
+    font-size: 1.1rem;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Link Hover Effect */
+.navbar nav ul li a:hover {
+    background-color: #EBC6C4; /* Light color from the palette */
+    transform: translateY(-2px); /* Slight upward movement on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+
+/* Navbar Animation */
+.navbar.scrolled {
+    background-color: #A89EBC; /* Darkest color when scrolling */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); /* Stronger shadow */
+}
+
+/* Adding Space for Fixed Navbar */
+body {
+    padding-top: 90px; /* Space for fixed navbar */
+}

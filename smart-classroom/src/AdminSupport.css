@@ -1,0 +1,84 @@
+.admin-support-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+  }
+  
+  .admin-support-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+  
+  .admin-support-message-box {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .support-message {
+    margin-bottom: 10px;
+  }
+  
+  .teacher-message {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+  }
+  
+  .admin-message {
+    background-color: #e1ffe1;
+    padding: 10px;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .support-message strong {
+    font-weight: bold;
+  }
+  
+  .support-message small {
+    font-size: 0.8em;
+    color: #777;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .admin-support-input-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  
+  .admin-support-input-container input {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .admin-support-input-container button {
+    width: 15%;
+    padding: 10px;
+    font-size: 1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .admin-support-input-container button:hover {
+    background-color: #45a049;
+  }
+  

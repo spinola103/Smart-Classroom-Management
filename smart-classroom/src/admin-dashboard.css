@@ -1,0 +1,181 @@
+/* Dashboard Layout */
+.dashboard-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    align-items: center; /* Center align horizontally */
+    justify-content: center; /* Center align vertically */
+    padding: 2rem; /* Add some spacing */
+  }
+  
+  /* Header Section */
+  .welcome-section {
+    align-self: flex-start; /* Align text to the left */
+    margin-bottom: 2rem; /* Add spacing below the header */
+  }
+  
+  .welcome-section h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Main Content */
+  .main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .main-content h2 {
+    font-size: 2rem;
+    color: #34495e;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* General layout */
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive layout */
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  
+  /* Card styles */
+  .card {
+    background: linear-gradient(145deg, #9b59b6, #8e44ad); /* Gradient background for vibrancy */
+    color: #fff; /* White text inside */
+    padding: 2.5rem;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deep shadow for depth */
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s, background 0.3s; /* Smooth animations */
+  }
+  
+  /* Make cards bigger */
+  .card img {
+    display: block;
+    margin: 0 auto 1.5rem;
+    width: 450px; /* Increased size */
+    height: 120px;
+    object-fit: contain;
+    filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.4)); /* Enhanced shadow for icons */
+  }
+  
+  .card h3 {
+    margin: 1rem 0;
+    font-size: 1.8rem; /* Bigger font size for titles */
+    font-weight: bold;
+    color: #fff; /* White heading */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8); /* Glow effect for text */
+    transition: text-shadow 0.3s ease; /* Smooth glow effect */
+  }
+  
+  .card p {
+    font-size: 1.1rem; /* Slightly bigger text for better readability */
+    margin: 0.5rem 0 0;
+    color: #eaeaea; /* Lighter text for contrast */
+  }
+  
+  /* Hover effects */
+  .card:hover {
+    transform: translateY(-15px) scale(1.05); /* Lift and slight scale on hover */
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4); /* Enhanced shadow on hover */
+    background: linear-gradient(145deg, #8e44ad, #9b59b6); /* Lighter gradient on hover */
+  }
+  
+  .card:hover h3 {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 1), 0 0 20px #ffffff; /* Brighter glow on hover */
+  }
+  
+  .card:active {
+    transform: scale(0.97); /* Press-in effect */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Reduced shadow */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .cards {
+      grid-template-columns: 1fr; /* Switch to 1 column on smaller screens */
+      width: 90%;
+    }
+  
+    .card {
+      padding: 2rem;
+    }
+  
+    .card img {
+      width: 130px;
+      height: 130px;
+    }
+  
+    .card h3 {
+      font-size: 1.5rem;
+    }
+  
+    .card p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Events Section */
+  .events-section {
+    margin-top: 3rem;
+    text-align: center;
+  }
+  
+  .events-section h2 {
+    font-size: 2rem;
+    color: #7D3C98;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Button Styles */
+  .back-to-top-btn {
+    padding: 1rem 2rem;
+    background-color: #8e44ad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-to-top-btn:hover {
+    background-color: #9B59B6;
+  }
+  
+  /* Additional spacing for Admin-specific content */
+  .admin-actions {
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+  
+  .admin-actions .card {
+    width: 250px; /* Adjust for smaller cards */
+  }
+  
+  .admin-actions .card img {
+    width: 100px;
+    height: 100px;
+  }
+  
+  .admin-actions .card h3 {
+    font-size: 1.5rem;
+  }
+  
+  .admin-actions .card p {
+    font-size: 1rem;
+  }
+  

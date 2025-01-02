@@ -1,0 +1,78 @@
+/* Hero Section */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 100px 20px;
+    min-height: calc(100vh - 60px); /* Full height minus header */
+    background-color: #ffffff; /* Background color */
+}
+
+.hero .content {
+    flex: 1;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    color: #5d1660;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: 1.5rem;
+    color: #5d1660;
+    line-height: 1.5;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/* Book Stack Animation */
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    animation: float 3s ease-in-out infinite; /* Apply the float animation */
+}
+
+/* Floating Animation Keyframes */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* 3D Login Button */
+.btn-login {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 40px; /* Increase padding for a larger button */
+    background-color: #EB9F9B; /* Accent color from the palette */
+    color: #5d1660; /* Text color */
+    font-size: 1.2rem;
+    font-weight: bold; /* Make the text bold */
+    text-decoration: none;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 5px #6C87A6; /* Shadow for 3D effect */
+    transition: all 0.3s ease; /* Smooth transition */
+    position: relative;
+    top: 0;
+}
+
+/* Hover Effect */
+.btn-login:hover {
+    top: -3px; /* Move button up on hover */
+    box-shadow: 0 8px #6C87A6; /* Increase shadow for more depth */
+    background-color: #EBC6C4; /* Slightly lighter shade on hover */
+}
+
+/* Active Effect */
+.btn-login:active {
+    top: 5px; /* Move button down on click */
+    box-shadow: 0 2px #6C87A6; /* Reduce shadow for pressed effect */
+}

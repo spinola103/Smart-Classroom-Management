@@ -1,0 +1,112 @@
+:root {
+  --primary-color: #6b5b95;
+  --secondary-color: #d4a5a5;
+  --card-bg: #f8f4fc;
+  --hover-bg: #e8e0f1;
+  --shadow-color: rgba(0, 0, 0, 0.2);
+}
+
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+
+}
+
+
+
+h1 {
+  color: var(--primary-color);
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column; /* Single column alignment */
+  gap: 25px; /* Spacing between courses */
+  max-width: 800px;
+  margin: 0 auto; /* Center the list */
+  padding-bottom: 50px; /* Adds free space below the last box */
+}
+
+.course-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #ffffff, var(--hover-bg));
+  box-shadow: 0 8px 15px var(--shadow-color);
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(145deg, var(--hover-bg), #ffffff);
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.25);
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.course-info h3 {
+  font-size: 24px;
+  margin: 0;
+  font-weight: bold;
+}
+
+.course-info p {
+  font-size: 16px;
+  margin: 5px 0;
+  color: var(--secondary-color);
+}
+
+.course-options {
+  font-size: 30px;
+  color: var(--primary-color);
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.course-options:hover {
+  transform: rotate(90deg);
+  color: #4a4a4a;
+}
+
+.course-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  width: 200%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  transform: rotate(45deg);
+  pointer-events: none;
+}
+
+.course-card:hover::before {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .course-options {
+    margin-top: 15px;
+  }
+}

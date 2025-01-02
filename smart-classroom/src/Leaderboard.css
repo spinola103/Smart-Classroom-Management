@@ -1,0 +1,97 @@
+
+  .leaderboard-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .leaderboard-title {
+    font-size: 2.5rem;
+    color: #6b5b95;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .leaderboard-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .leaderboard-item:hover {
+    transform: scale(1.05);
+    background-color: #bdade3;
+    ;
+  }
+  
+  .rank {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .rank-1 .rank {
+    color: #ffcc00;
+  }
+  
+  .rank-2 .rank {
+    color: #c0c0c0;
+  }
+  
+  .rank-3 .rank {
+    color: #cd7f32;
+  }
+  
+  .name {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .points {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .rank-details {
+    margin-top: 20px;
+    background: #bdade3;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+  }
+  
+  .rank-details h3 {
+    font-size: 1.5rem;
+    color: #6b5b95;
+    margin-bottom: 10px;
+  }
+  
+  .rank-details p {
+    font-size: 1.2rem;
+    color: #333;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  

@@ -1,0 +1,92 @@
+/* Login Section */
+.login-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #FFF5EA; /* Soft cream background */
+    position: relative;
+}
+
+.login-box {
+    background-color: #844794C6; /* Dark purple for login box background */
+    padding: 80px; /* Increased padding for a larger box */
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    width: 400px; /* Set fixed width for square shape */
+    height: 500px; /* Adjusted height for better layout */
+    text-align: center;
+    z-index: 2;
+}
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 2.5rem; /* Slightly larger font size for heading */
+    color: #FFF5EA; /* Soft cream for heading */
+}
+
+.textbox {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.textbox i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #A89EBC; /* Soft purple for icons */
+}
+
+.textbox input {
+    width: 100%;
+    padding: 20px 20px 20px 60px; /* Increased padding for larger inputs */
+    font-size: 1.3rem; /* Increased font size for better visibility */
+    color: #A89EBC; /* Soft purple for input text */
+    background-color: #FFF5EA; /* Soft cream background for inputs */
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn {
+    background-color: #EB9F9B; /* Soft pink for button background */
+    color: #FFF5EA; /* Dark purple for button text */
+    padding: 15px 25px; /* Increased padding for larger button */
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem; /* Larger font size for button */
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.btn:hover {
+    background-color: #EBC6C4; /* Lighter pink on hover */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Forgot Password link inside the login box */
+.forgot-password {
+    display: block;
+    margin-top: 15px;
+    color: #FFF5EA; /* Soft cream for forgot password link */
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}

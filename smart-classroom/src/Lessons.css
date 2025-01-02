@@ -1,0 +1,111 @@
+
+.lessons-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header styling */
+h1 {
+  font-size: 2.5rem;
+  color: #4a4a6a;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #4a4a6a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styling */
+.lesson-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 40px;
+}
+
+.lesson-form label {
+  font-size: 1.2rem;
+  color: #4a4a6a;
+  font-weight: bold;
+}
+
+.lesson-form input {
+  padding: 10px;
+  width: 80%;
+  max-width: 400px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-form button {
+  padding: 12px 25px;
+  background-color: #9393d2; /* Updated to match website theme */
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.lesson-form button:hover {
+  background-color: #d3cff1;
+  transform: scale(1.05);
+}
+
+/* Lessons list styling */
+.lesson-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Individual lesson card styling */
+.lesson-card {
+  background-color: transparent; /* No background color */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px) scale(1.03);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.lesson-card h3 {
+  font-size: 1.4rem;
+  color: #4a4a6a;
+  margin-bottom: 10px;
+}
+
+.lesson-card p {
+  font-size: 1rem;
+  color: #5a5a5a;
+  line-height: 1.5;
+  text-align: justify;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+
+/* Responsive design for smaller screens */
+@media screen and (max-width: 768px) {
+  .lesson-form input {
+    width: 90%;
+  }
+}

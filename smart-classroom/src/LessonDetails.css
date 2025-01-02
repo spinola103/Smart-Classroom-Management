@@ -1,0 +1,189 @@
+.word-guessing-game {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.lesson-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hint-section {
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.word-section {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.letter {
+  display: inline-block;
+  width: 24px;
+  margin: 0 5px;
+  padding: 10px;
+  border-bottom: 2px solid #000;
+  font-size: 24px;
+}
+
+.letter.revealed {
+  transition: all 0.3s ease-in-out;
+  color: #000;
+}
+
+.hangman {
+  margin: 20px auto;
+  width: 100px;
+  height: 200px;
+  position: relative;
+}
+
+.hangman-part {
+  display: none;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+}
+
+.hangman-part.show {
+  display: block;
+}
+
+.head {
+  top: 20px;
+  left: 30px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 3px solid #000;
+}
+
+.body {
+  top: 60px;
+  left: 48px;
+  width: 4px;
+  height: 60px;
+  background: #000;
+}
+
+.left-arm {
+  top: 70px;
+  left: 25px;
+  width: 30px;
+  height: 4px;
+  background: #000;
+  transform: rotate(-45deg);
+}
+
+.right-arm {
+  top: 70px;
+  left: 48px;
+  width: 30px;
+  height: 4px;
+  background: #000;
+  transform: rotate(45deg);
+}
+
+.left-leg {
+  top: 120px;
+  left: 25px;
+  width: 30px;
+  height: 4px;
+  background: #000;
+  transform: rotate(-30deg);
+}
+
+.right-leg {
+  top: 120px;
+  left: 48px;
+  width: 30px;
+  height: 4px;
+  background: #000;
+  transform: rotate(30deg);
+}
+
+.keyboard {
+  margin-top: 20px;
+}
+
+.keyboard-key {
+  margin: 5px;
+  padding: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.keyboard-key:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.game-result {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: red;
+}
+
+.progress {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.next-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
+}
+
+.next-button:hover {
+  background-color: #45a049;
+}
+
+.points-section {
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.final-points {
+  font-size: 24px;
+  color: #4caf50;
+}
+
+.win-message {
+  font-size: 20px;
+  color: #ffd700;
+}
+
+.try-again-message {
+  font-size: 20px;
+  color: #ff5722;
+}
+
+.confetti {
+  background-image: url("./images/confetti.gif");
+  height: 200px;
+  width: 100%;
+  margin-top: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+} 

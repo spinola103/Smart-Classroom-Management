@@ -1,0 +1,87 @@
+/* Footer Styles */
+footer {
+    background-color: #A89EBC;
+    color: #FFF5EA;
+    text-align: center;
+    padding: 5px 20px;
+    width: 100%;
+    position: relative;
+    margin-top: auto;
+    z-index: 1000;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 15px 15px 0 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: block;
+    font-size: 1.2rem;
+    color: #FFF5EA;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #EBC6C4;
+    transform: scale(1.2);
+}
+
+/* Back to Top Button Styles with Animation */
+.back-to-top {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+    background-color: #A89EBC;
+    color: #FFF5EA;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+    text-align: center;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: bounce 2s infinite;
+}
+
+.back-to-top:hover {
+    background-color: #EBC6C4;
+    transform: scale(1.1);
+}
+
+/* Bouncing Animation for Back to Top Button */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-20px);
+    }
+    60% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Show Back to Top Button on Scroll */
+.show-back-to-top {
+    display: block;
+}

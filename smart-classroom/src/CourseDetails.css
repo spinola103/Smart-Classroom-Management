@@ -1,0 +1,142 @@
+/* General container for the lessons page */
+.course-details {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: linear-gradient(135deg, #f7f7f7, #eaeaea);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-family: "Arial", sans-serif;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Loading message styling */
+.loading-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  font-style: italic;
+}
+
+/* Lessons section styling */
+.lessons {
+  margin-top: 2rem;
+}
+
+.lessons-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #444;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.lessons-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Lesson item container */
+.lesson-item {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  cursor: pointer;
+}
+
+.lesson-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background: #f7f7ff;
+}
+
+/* Highlight selected lesson */
+.lesson-item.selected {
+  border-color: #6b5b95;
+  background: #ede7f6;
+  box-shadow: 0 4px 12px rgba(107, 91, 149, 0.4);
+  transform: translateY(-5px);
+}
+
+/* Lesson title styling */
+.lesson-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 0.7rem;
+}
+
+/* Lesson transcription styling */
+.lesson-transcription {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+/* Play Game button styling */
+.play-game-button {
+  display: block;
+  margin: 1rem auto 0;
+  padding: 0.6rem 1.5rem;
+  background: linear-gradient(135deg, #6b5b95, #8e7cc3);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.play-game-button:hover {
+  background: linear-gradient(135deg, #8e7cc3, #b5aed9);
+  transform: translateY(-3px) scale(1.05);
+  box-shadow: 0 6px 12px rgba(107, 91, 149, 0.3);
+}
+
+/* Add an animation to make the button pop */
+@keyframes buttonPop {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.play-game-button {
+  animation: buttonPop 0.4s ease-out;
+}
+
+/* Fade-in animation for the container */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* General link styling removal for non-navigation areas */
+.lesson-link {
+  display: none; /* Remove links when unnecessary */
+}
